@@ -133,10 +133,15 @@ subtitle = ""
 
 Noted that the content between "+++" is configuration and below it is the text elements.
 
-### Grammar
+### functions
 Please check out details on the official website, here are only some changes we made often 
-- set active = false to hide widgets on main page
-- weight  is for order that section will appear, the bigger the lower
+1. hide widgets on main page: set active = false 
+2. order of widgets: set weight parameter, the bigger the lower
+3. add web counter
+   - copy cooresponding file under themes/academic/layouts/partials, e.g. site_footer.html into the /root/layouts/partials folder.
+   - Find a web counter plugin on [freecounterweb](https://www.counter12.com/)
+   - copy the html code into file under your root folder.
+   - Done!
 
 ### [custom theme](https://sourcethemes.com/academic/docs/customization/#custom-theme)
 Choose one frome themes/academic/data/themes/xxx.toml and set theme = "xxx" in config/_default/params.toml. To customize a color theme, copy a theme such as themes/academic/data/themes/minimal.toml to data/themes/my_theme.toml (at the root of your site, not in themes/academic/), creating the data/themes/ folders if they do not already exist.
