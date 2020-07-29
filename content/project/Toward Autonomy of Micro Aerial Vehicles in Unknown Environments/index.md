@@ -45,9 +45,10 @@ url_code = ""
 
 
 +++
-From January 2019, I worked on the “Autonomy of Micro Aerial Vehicles in Unknown Environments” project. The objective is to make MAV system that can navigate autonomously in GPS-denied and obstacle-cluttered environments while avoiding obstacles on the way. Various advanced technologies have been designed, including a stereo visual-inertial state estimation that can handle scenarios without external localization resource, a GPU-based EDF mapping that significantly improves the real-time performance without sacrificing accuracy as well as a model predictive local motion planning with BSCPs solved by PSO, providing increased performance for tasks that require precise and timely maneuver. The results of simulation and real flight testing in both indoor and semi-open scenarios with various tasks have proved the effectiveness of the proposed system for challenging practical applications.  
+Since January 2019, I have been working on developing a  MAV system that can navigate autonomously in GPS-denied and obstacle-cluttered environments. Various advanced technologies have been designed, including a stereo visual-inertial state estimation that can handle scenarios without external localization resource, a GPU-based EDF mapping that significantly improves the real-time performance without sacrificing accuracy as well as a model predictive local motion planning with BSCPs solved by PSO, providing increased performance for tasks that require precise and timely maneuver. The results of simulation and real flight testing in both indoor and semi-open scenarios with various tasks have proved the effectiveness of the proposed system for challenging practical applications.
 
-This work has resulted in the paper "Toward Autonomy of Micro Aerial Vehicles in Unknown and Global Positioning System Denied Environments" published in the IEEE Transactions on Industrial Electronics.
+This work has resulted in the paper “Towards Autonomy of Micro Aerial Vehicles in Unknown and Global Positioning System Denied Environments” published in the IEEE Transactions on Industrial Electronics.
+
 
 
 {{< youtube id="KUKzsnORm-4">}}

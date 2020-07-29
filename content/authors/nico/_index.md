@@ -18,12 +18,13 @@ organizations:
   url: "http://www.nus.edu.sg/"
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio: My research interests lie in 3D visual perception and navigation,  applied machine learning. 
+
 
 interests:
-- 3D visual perception and navigation
-- machine learning
-- Artificial Intelligence
+- 3D Visual Perception and Navigation
+- Machine Learning
+- Embedded AI
 - Autonomous Systems
 
 education:
@@ -82,5 +83,5 @@ I'm currently an associate scientist in the [Intelligent Unmanned System Group](
 Previously, I was working as a research engineer in the [Biorobotics Lab](http://www.bioeng.nus.edu.sg/biorob/index.html), [National University of Singapore](http://nus.edu.sg/) under [Dr. Haoyong Yu](http://www.bioeng.nus.edu.sg/people/PI/YUHaoyong/)’s supervision. 
 I was also a member of the [State Key Laboratory of Robotics](http://english.sia.cas.cn/rh/rp/201408/t20140814_125856.html) which is part of the [Chinese Academy of Sciences](http://english.cas.cn/).
 
-My research interests includes 3D visual perception and navigation, data science, machine learning, and autonomous systems. Please feel free to contact me for any cooperation.
+I am an incoming PhD candidate in the ECE department at the University of Illinois at Urbana-Champaign. My research interests lie in 3D visual perception and navigation, applied machine learning. 
 

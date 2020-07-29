@@ -45,7 +45,7 @@ url_code = "https://github.com/yuzhou42/multi-robot_web_user_interface.git"
 +++
 
 ### overview
-Ｔhis is for web-based UI shown as the image. It can connect to multiple drones by their IP address and show status of each drone, such as positon, image, healthy status etc. User can sent commands (takeoff, mission, swarm, hover, landing) to drone directly from the UI. Moreover, a Google map is inserted to show realtime location and trajectory of the drones. 
+This was a web-based UI (as shown in the image),  I developed with the purpose of connecting to multiple drones via their  IP address and  reporting back the status of each drone, e.g. position, video feed and health status. The user may send commands (takeoff, mission, swarm, hover, landing) to any connected drone directly from the UI. Google map was inserted to show real time locations and trajectories. 
 
 ### Tutorials and useful websites
 1. [Bootstrap 4 + ROS](https://medium.com/husarion-blog/bootstrap-4-ros-creating-a-web-ui-for-your-robot-9a77a8e373f9)

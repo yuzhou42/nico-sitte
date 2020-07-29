@@ -1,5 +1,5 @@
 ---
-title: "Toward Autonomy of Micro Aerial Vehicles in Unknown and Global Positioning System Denied Environments"
+title: "Towards Autonomy of Micro Aerial Vehicles in Unknown and Global Positioning System Denied Environments"
  
 authors:
 - nico # put this author name instead of your name directly will enable the function of showing your Info at the end of the publication page
