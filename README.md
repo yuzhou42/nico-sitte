@@ -133,18 +133,6 @@ subtitle = ""
 
 Noted that the content between "+++" is configuration and below it is the text elements.
 
-### functions
-Please check out details on the official website, here are only some changes we made often 
-1. hide widgets on main page: set active = false 
-2. order of widgets: set weight parameter, the bigger the lower
-3. add web counter
-   - copy cooresponding file under themes/academic/layouts/partials, e.g. site_footer.html into the /root/layouts/partials folder.
-   - Find a web counter plugin on [freecounterweb](https://www.counter12.com/)
-   - copy the html code into file under your root folder.
-   - Done!
-
-### [custom theme](https://sourcethemes.com/academic/docs/customization/#custom-theme)
-Choose one frome themes/academic/data/themes/xxx.toml and set theme = "xxx" in config/_default/params.toml. To customize a color theme, copy a theme such as themes/academic/data/themes/minimal.toml to data/themes/my_theme.toml (at the root of your site, not in themes/academic/), creating the data/themes/ folders if they do not already exist.
 ## Build static pages
 ```
 $ hugo -D
@@ -170,5 +158,61 @@ git submodule add -b master https://github.com/<USERNAME>/<USERNAME>.github.io.g
 ```
 $ ./deploy.sh
 ```
+
+
+### functions
+Please check out details on the official website, here are only some changes we made often. Remember whenever you wanted to edit something regarding layouts, you will need to create setting file following the structure in the theme submodule under your root layouts. The function set in root will overwrite the one in the submodule.
+1. hide widgets on main page: set active = false 
+2. order of widgets: set weight parameter, the bigger the lower
+3. add web counter
+   - copy cooresponding file under themes/academic/layouts/partials, e.g. site_footer.html into the /root/layouts/partials folder.
+   - Find a web counter plugin on [freecounterweb](https://www.counter12.com/)
+   - copy the html code into file under your root folder.
+   - Done!
+
+4. [custom theme](https://sourcethemes.com/academic/docs/customization/#custom-theme)
+Choose one frome themes/academic/data/themes/xxx.toml and set theme = "xxx" in config/_default/params.toml. To customize a color theme, copy a theme such as themes/academic/data/themes/minimal.toml to data/themes/my_theme.toml (at the root of your site, not in themes/academic/), creating the data/themes/ folders if they do not already exist.
+
+5. Add TOC for posts/projects etc
+   - change this param in the config.toml to set the level of table of content
+  ```
+    [markup.tableOfContents]
+    startLevel = 1
+    endLevel = 4
+  ```
+   - create single.html file under root/layouts/_default and root/layouts/project etc.
+   - copy the following content inside the single.html file.
+  
+  ```
+  {{- define "main" -}}
+  {{ if .Params.toc }}
+  <div class="container-fluid docs">
+      <div class="row flex-xl-nowrap">
+        <div class="d-none d-xl-block col-xl-2 docs-toc">
+          <ul class="nav toc-top">
+            <li><a href="#" id="back_to_top" class="docs-toc-title">{{ i18n "on_this_page" }}</a></li>
+          </ul>
+          {{ .TableOfContents }}
+          {{ partial "docs_toc_foot" . }}
+        </div>
+        <main class="col-12 col-md-0 col-xl-10 py-md-3 pl-md-5 docs-content" role="main">
+  {{ end }}
+          <article class="article">
+              {{ partial "page_header" . }}
+              <div class="article-container">
+                <div class="article-style">
+                  {{ .Content }}
+                </div>
+                {{ partial "page_footer" . }}
+              </div>
+          </article>
+    {{ if .Params.toc }}
+        </main>
+      </div>
+    </div>
+    {{ end }}
+  {{- end -}}
+  ```
+
 # Links
 - [hugo-get-started](https://gohugo.io/getting-started/)
