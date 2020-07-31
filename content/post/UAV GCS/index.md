@@ -41,6 +41,7 @@ url_code = ""
   # Focal point (optional)
   # Options: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight
   focal_point = "Smart"
+  preview_only = "true"
 +++
 
 This is a UAV ground station software designed for agriculture irrigation with functions such as information monitoring, UAV parameter setup, sensor calibration, and specific irrigation parameter setup. 

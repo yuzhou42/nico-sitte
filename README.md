@@ -159,21 +159,26 @@ git submodule add -b master https://github.com/<USERNAME>/<USERNAME>.github.io.g
 $ ./deploy.sh
 ```
 
-
-### functions
-Please check out details on the official website, here are only some changes we made often. Remember whenever you wanted to edit something regarding layouts, you will need to create setting file following the structure in the theme submodule under your root layouts. The function set in root will overwrite the one in the submodule.
+### features
+Please check out details on the official website, here are only some changes we made often. 
 1. hide widgets on main page: set active = false 
 2. order of widgets: set weight parameter, the bigger the lower
-3. add web counter
+3. preview image and do not show it in the page.
+   set `preview_only: true` under image tag in hugo Front Matter Formats
+   
+### functions
+Remember whenever you wanted to edit something regarding layouts, you will need to create setting file following the structure in the theme submodule under your root layouts. The function set in root will overwrite the one in the submodule.
+
+1. add web counter
    - copy cooresponding file under themes/academic/layouts/partials, e.g. site_footer.html into the /root/layouts/partials folder.
    - Find a web counter plugin on [freecounterweb](https://www.counter12.com/)
    - copy the html code into file under your root folder.
    - Done!
 
-4. [custom theme](https://sourcethemes.com/academic/docs/customization/#custom-theme)
+2. [custom theme](https://sourcethemes.com/academic/docs/customization/#custom-theme)
 Choose one frome themes/academic/data/themes/xxx.toml and set theme = "xxx" in config/_default/params.toml. To customize a color theme, copy a theme such as themes/academic/data/themes/minimal.toml to data/themes/my_theme.toml (at the root of your site, not in themes/academic/), creating the data/themes/ folders if they do not already exist.
 
-5. Add TOC for posts/projects etc
+3. Add TOC for posts/projects etc
    - change this param in the config.toml to set the level of table of content
   ```
     [markup.tableOfContents]
@@ -213,6 +218,8 @@ Choose one frome themes/academic/data/themes/xxx.toml and set theme = "xxx" in c
     {{ end }}
   {{- end -}}
   ```
+
+  
 
 # Links
 - [hugo-get-started](https://gohugo.io/getting-started/)

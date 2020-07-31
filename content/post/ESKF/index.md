@@ -42,6 +42,7 @@ url_code = "https://github.com/NicoChou/ESKF-Attitude-Estimation"
   # Focal point (optional)
   # Options: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight
   focal_point = "Smart"
+  preview_only = "true"
 +++
 The error-state Kalman filter (ESKF) is one of the tools we may use for 
 combining IMU with magnetometer data to obtain a robust attitude estimation. 

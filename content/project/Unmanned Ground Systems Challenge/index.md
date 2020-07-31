@@ -42,6 +42,7 @@ url_code = ""
   # Focal point (optional)
   # Options: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight
   focal_point = "Smart"
+  preview_only = "true"
 +++
 Along with 3 other teammates from the [State Key Laboratory of Robotics](http://english.sia.cas.cn/rh/rp/201408/t20140814_125856.html), 
 I participated in the Unmanned Ground Systems Challenge in October 2016 and worked specifically on the environment map 
