@@ -3,15 +3,19 @@ Build a personal website using hugo with [hugo-academic](https://github.com/gcus
 
 # set up environment
 ## [install hugo](https://github.com/gohugoio/hugo/releases)
+```
 $ snap install hugo --channel=extended
 $ add "export PATH=/snap/bin${PATH:+:${PATH}}$" in .bashrc file
+```
 
 ## initailize a hugo folder with academic themes
+```
 $ hugo new site my_website
 $ cd my_website
 $ git init
 $ git submodule add https://github.com/gcushen/hugo-academic.git themes/academic
 $ cp -av themes/academic/exampleSite/* .
+```
 
 # Structure of hugo site 
 Here will talk about the folders and files under root folder where we have to do some modification. More detailed info can refer to the comments in each file and the official website [page builder](https://sourcethemes.com/academic/docs/page-builder/#)
@@ -22,7 +26,7 @@ Here will talk about the folders and files under root folder where we have to do
   Weight here only get to decide the order in the navigation bar. The order of contents on this page is decided by the widgets files
 - params.toml is mainly for the auther info in the first page
    
-1. contents
+2. contents
   All the contents will be written here.
 - authors
   Each folder under this is the person's infomation with avatar. The website's author can be assigned as one of the person here in the about.md file under home folder
@@ -80,7 +84,8 @@ Here will talk about the folders and files under root folder where we have to do
   $ cd root-folder-of-your-site
   $ hugo new posts/test.md (for example)
   Then you will get a page looks like this:
-``` 
+
+<pre>
   +++
 # A section created with the Blank widget.
 widget = "blank"  # See https://sourcethemes.com/academic/docs/page-builder/ 
@@ -129,7 +134,7 @@ subtitle = ""
 +++
 
 [**Add some elements here**](https://sourcethemes.com/academic/docs/writing-markdown-latex/)
-```
+</pre>
 
 Noted that the content between "+++" is configuration and below it is the text elements.
 
@@ -159,14 +164,25 @@ git submodule add -b master https://github.com/<USERNAME>/<USERNAME>.github.io.g
 $ ./deploy.sh
 ```
 
-### features
+## features
 Please check out details on the official website, here are only some changes we made often. 
 1. hide widgets on main page: set active = false 
 2. order of widgets: set weight parameter, the bigger the lower
 3. preview image and do not show it in the page.
    set `preview_only: true` under image tag in hugo Front Matter Formats
+4. [Links and Cross References](https://gohugo.io/content-management/cross-references/)
+   Example: [web-based UI]({{< ref "project/webui/index.md">}})
+5. `page_type` in the *.md file under home folder refer to the folder name under content folder. However, it has to be one of the folders directly under /content.
+6. space adjustment
    
-### functions
+   Add the following code in the front matter of .md file.
+   <pre>
+    [design.spacing]
+    # Customize the section spacing. Order is top, right, bottom, left.
+    padding = [" 15px ", "0", " ", "0"] 
+  </pre>
+
+## functions
 Remember whenever you wanted to edit something regarding layouts, you will need to create setting file following the structure in the theme submodule under your root layouts. The function set in root will overwrite the one in the submodule.
 
 1. add web counter
