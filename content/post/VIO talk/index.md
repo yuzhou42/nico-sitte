@@ -24,7 +24,8 @@ all_day: false
 publishDate: "2020-06-18T13:00:00Z"
 
 authors: []
-tags: []
+tags:
+- VIO
 
 # Is this a featured talk? (true/false)
 featured: false
@@ -38,6 +39,7 @@ links:
 #   icon_pack: fab
 #   name: Follow
 #   url: https://twitter.com/georgecushen
+external_link: https://yuzhou42.bitbucket.io/2_vio/vio-basalt-front-end/
 url_code: ""
 url_pdf: "https://drive.google.com/file/d/1tTZfRZ3O6bylpUBmCvq1xOyVRCtjoDON/view?usp=sharing"
 url_slides: ""

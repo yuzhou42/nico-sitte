@@ -9,6 +9,7 @@ tags:
 - ROS
   
 url_code: https://github.com/NicoChou/camera-laser-calibration
+url_video: https://www.youtube.com/watch?v=9jwvK2DOzgU
 image:
   focal_point: Smart
 ---
@@ -23,11 +24,12 @@ The calibration procedure and fusion results are shown on Figure 1.
 
 ![This is an image](featured1.png)
 <center>Fig. 1. Calibration Procedure<center>
-
+</br>
 
 {{< youtube id="9jwvK2DOzgU">}}
 <center>Video 1. Fusion results<center>
-
+</br>
 
 {{< youtube id="ihkgXOpipxY">}}
 <center>Video 2. Fusion results<center>
+</br>

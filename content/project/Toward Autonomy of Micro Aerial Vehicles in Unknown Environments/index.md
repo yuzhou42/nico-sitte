@@ -21,7 +21,7 @@ tags:
 - ROS
 
 # Optional external URL for project (replaces project detail page).
-external_link:
+external_link: https://yuzhou42.bitbucket.io/1_project_overview/overview/
 
 # Slides (optional).
 #   Associate this project with Markdown slides.

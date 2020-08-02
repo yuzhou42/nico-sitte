@@ -30,9 +30,10 @@ external_link:
 slides: 
 
 # Links (optional).
-url_pdf: 
+url_pdf: https://ieeexplore.ieee.org/document/7574843
 url_slides: 
-url_video: 
+url_video: https://www.youtube.com/watch?v=0SGRLABnbwc&t=3s
+
 url_code: 
 
 # Custom links (optional).
@@ -49,7 +50,9 @@ image:
   # Options: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight
   focal_point: Smart 
   preview_only: true 
+toc: true
 ---
+# Overview
 Along with 4 other teammates from the [State Key Laboratory of Robotics](http://english.sia.cas.cn/rh/rp/201408/t20140814_125856.html), 
 I participated in the 3rd International Unmanned Aerial Vehicle Grand Prix, 
 held at the end of October 2015. 
@@ -60,13 +63,16 @@ The UAV had to transport buckets between the two moving platforms, as shown on F
 
 ![This is an image](Slide15.png)
 <center>Fig. 1. Unmanned Aerial Vehicle Grand Prix</center>
+</br>
 
+## Visual guidance
 I worked specifically on the visual guidance design. 
 Our team finished 2nd out of 20 teams in total.
 The vision-based guidance work can be divided into 2 parts: 
 ellipse detection and position estimation.
 
-#### Ellipse detection
+
+### Ellipse detection
 
 The ellipse detection algorithm is divided into two parts: whole ellipse detection and partial ellipse detection. 
 
@@ -86,7 +92,7 @@ First, we computed the convex hull for each contour that is not classified as a 
 then fitted ellipses for each convex hull, 
 while computing the algebraic error between the convex hulls and the fitted ellipses.
 
-#### Position estimation
+### Position estimation
 
 Position estimation helped us get the relative position between the circle markers and the UAV, 
 that we leveraged to track the circle to navigate the UAV. 
@@ -99,10 +105,12 @@ with the Z-axis of the word frame orthogonal to the circle plane.
 Thus, the four points on the world frame are evenly distributed on the circle as the diameter of the circle is known. 
 Ellipse detection then yields four corresponding points in the image: 
 we can thus estimate the rotation and transformation matrices between the circle markers and the UAV, which we use to control the UAV.
-
-
 ![This is an image](Slide16.png)
 <center>Fig. 2. Detection Results</center>
+</br>
+
+# Videos
+
 
 {{< youtube id= "3368_Q3Q8q0" >}}
 <center>Video 1. Indoor testing</center>

@@ -56,8 +56,11 @@ The formulation of the ESKF algorithm used for attitude estimation is as follows
 
 ![This is an image](Slide12.png)
 <center>Fig.1. Error-State Kalman Filter 1</center>
+</br>
+
 ![This is an image](Slide13.png)
 <center>Fig.2. Error-State Kalman Filter 2</center>
+</br>
 
 Below are results of the ESKF for roll, pitch, and yaw angles. 
 The red line represents the estimation values, and the green is the ground truth.
@@ -65,9 +68,11 @@ The red line represents the estimation values, and the green is the ground truth
 
 ![This is an image](featured.png)
 <center>Fig.3. Roll</center>
+</br>
 
 ![This is an image](eskf_2.png)
 <center>Fig.4. Pitch</center>
+</br>
 
 ![This is an image](eskf_3.png)
 <center>Fig.5. Yaw</center>

@@ -5,7 +5,7 @@ title: Unmanned Ground Systems Challenge
 # Date this page was created.
 date: "2016-03-01T00:00:00"
 # Project summary to display on homepage.
-summary: 
+summary: The Unmanned Ground Systems Challenge in October 2016 with the task of wild field task execution, search, and transportation. I worked specifically on the environment map building and localization under GPS signal lost situation.
 
 # Tags: can be used for filtering projects.
 # Example: `tags = ["machine-learning", "deep-learning"]`
@@ -31,7 +31,7 @@ slides:
 # Links (optional).
 url_pdf: 
 url_slides: 
-url_video: 
+url_video: https://www.youtube.com/watch?v=AUbdU3WGoK8
 url_code: 
 
 # Custom links (optional).
@@ -50,13 +50,9 @@ image:
   preview_only: true
 toc: true
 ---
+# Overview
 Along with 3 other teammates from the [State Key Laboratory of Robotics](http://english.sia.cas.cn/rh/rp/201408/t20140814_125856.html), 
-I participated in the Unmanned Ground Systems Challenge in October 2016 and worked specifically on the environment map 
-building and localization under GPS signal lost situation.
-
-This challenge was held in a real field environment, 
-including wild battlefield task execution, 
-city battlefield search and investigation, and highland transportation. 
+I participated in the Unmanned Ground Systems Challenge in October 2016 and worked specifically on the environment map building and localization under GPS signal lost situation.
 
 ![This is an image](ugv_1.png)
 <center>Fig. 1. Our UGV platform</center>
@@ -68,27 +64,29 @@ Built an environment map for non-structured fields with the following steps:
 
 ![This is an image](Slide6.png)
 <center>Fig. 2. Environment Map BUilding Procedure</center>
+</br>
 
 The laser data was collected from different lasers: single-line, 32-line, and 64-line. 
 The data was fused after calibration and having manually filled certain points.
-
 ![This is an image](Slide7.png)
 <center>Fig. 3. Fuse Laser Data</center>
-
+</br>
 A road plane was fitted with a RANSAC method.
+
 ![This is an image](Slide8.png)
 <center>Fig. 4. Point Clouds Segmentation</center>
+</br>
 
 The grid map was built with the help of the [grid_map](https://github.com/ANYbotics/grid_map) package. 
 Finally, the road target was extracted through road skeleton extraction from the image generated from the environment map.
 
 ![This is an image](Slide9.png)
 <center>Fig. 5. Road Target Extraction</center>
-
+</br>
 Thus, we obtained all the perception information needed to drive a car intelligently in a field environment.
 
 {{< youtube id="AUbdU3WGoK8">}}
-<center>**Obstacle Avoidance Demo**</center>
+<center>Obstacle Avoidance Demo</center>
 
 ### Localization without GPS
 
@@ -102,9 +100,10 @@ Two methods were conducted to meet the requirements.
 I did this by combining the orb slam with IMU.
 ![This is an image](Slide10.png)
 <center>Fig. 6. Visual Inertial Odometry</center>
-
+</br>
 {{< youtube id="RRAzWU1_SSE">}}
 
+</br>
 
 #### 2. Laser Odometry   
 

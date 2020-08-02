@@ -23,7 +23,7 @@ external_link:
 #   `content/slides/example-slides.md`.
 #   Otherwise, set `slides: `.
 slides: 
-
+external_link: https://yuzhou42.bitbucket.io/4_web_ui/webui/
 # Links (optional).
 url_pdf: 
 url_slides: 
