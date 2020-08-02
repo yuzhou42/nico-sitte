@@ -1,12 +1,17 @@
-+++
-title = "Laser Camera Fusion"
-date = 2017-01-01T00:00:00
-summary = "This project was to calibrate the translation and rotation matrices between camera and laser coordinate systems to provide laser points with color information from the image for further applications such as segmentation."
-tags = ["Laser", "Sensor Fusion", "Computer Vision","ROS"]
-url_code = "https://github.com/NicoChou/camera-laser-calibration"
-[image]
-  focal_point = "Smart"
-+++
+---
+title: Laser Camera Fusion
+date: "2017-01-01T00:00:00"
+summary: This project was to calibrate the translation and rotation matrices between camera and laser coordinate systems to provide laser points with color information from the image for further applications such as segmentation.
+tags:
+- Laser 
+- Sensor Fusion 
+- Computer Vision
+- ROS
+  
+url_code: https://github.com/NicoChou/camera-laser-calibration
+image:
+  focal_point: Smart
+---
 
 This project was to calibrate the translation and rotation matrices between camera and laser coordinate systems 
 to provide laser points with color information from the image for further applications such as segmentation. 

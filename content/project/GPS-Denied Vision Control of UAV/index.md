@@ -1,48 +1,53 @@
-+++
+--- 
 # Project title.
-title = "GPS-Denied Vision Control of UAV"
+title: GPS-Denied Vision Control of UAV 
 
 # Date this page was created.
-date = 2017-03-15T00:00:00
-
-# Project summary to display on homepage.
-summary = "Develop an autonomous launch, tracking and landing system for an Unmanned Aerial Vehicle (UAV)."
-image_preview = "featured.jpg"
+date: "2017-03-15T00:00:00"
+ 
+summary: Develop an autonomous launch, tracking and landing system for an Unmanned Aerial Vehicle (UAV).
 # Tags: can be used for filtering projects.
-# Example: `tags = ["machine-learning", "deep-learning"]`
-tags = ["UAV",  "Robotics", "Autonomous Robot", "Computer Vision","ROS","Matrice 100","DJI SDK"]
+# Example: `tags = [ machine-learning ,  deep-learning ]`
+tags:
+- UAV 
+- Robotics  
+- Autonomous Robot 
+- Computer Vision 
+- ROS  
+- Matrice 100 
+- DJI SDK 
 
 # Optional external URL for project (replaces project detail page).
-external_link = ""
+external_link:  
 
 # Slides (optional).
 #   Associate this project with Markdown slides.
 #   Simply enter your slide deck's filename without extension.
-#   E.g. `slides = "example-slides"` references 
+#   E.g. `slides: example-slides ` references 
 #   `content/slides/example-slides.md`.
-#   Otherwise, set `slides = ""`.
-slides = " "
+#   Otherwise, set `slides:  `.
+slides:   
 
 # Links (optional).
-url_pdf = ""
-url_slides = ""
-url_video = ""
+url_pdf:  
+url_slides:  
+url_video:  
 
 
 # Custom links (optional).
 #   Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
-# url_custom = [{icon_pack = "fab", icon="twitter", name="Follow", url = "https://twitter.com/georgecushen"}]
+# url_custom = [{icon_pack: fab , icon= twitter , name= Follow , url: https://twitter.com/georgecushen }]
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your project's folder. 
-[image]
+image:
   # Caption (optional)
-  # caption = "Photo by rawpixel on Unsplash"
+  # caption: Photo by rawpixel on Unsplash 
   
   # Focal point (optional)
   # Options: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight
-  focal_point = "Smart"
-+++
+  focal_point: Smart 
+--- 
 From March 2017 to December 2018, I worked on “Project Micrathene” with a Ph.D. student who focused on controls. 
 The objective of this project was to develop an autonomous launch, tracking and landing system for an Unmanned Aerial Vehicle (UAV). 
 The object to track and land on was a moving ground platform, and everything was to be done without GPS.
@@ -92,5 +97,5 @@ including the pose between the moving platform and the UAV, sensor data from DJI
 <center>Fig. 3. Software design</center>
 
 The final demonstration is shown in the following video:
-{{< youtube id="cIJGd6TkZRM">}}
+{{< youtube id= "cIJGd6TkZRM" >}}
 <center>Demo Video</center>

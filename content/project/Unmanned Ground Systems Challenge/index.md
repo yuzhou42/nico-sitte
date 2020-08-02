@@ -1,49 +1,55 @@
-+++
+---
 # Project title.
-title = "Unmanned Ground Systems Challenge"
+title: Unmanned Ground Systems Challenge
 
 # Date this page was created.
-date = 2016-03-01T00:00:00
-image_preview = "featured.jpg"
+date: "2016-03-01T00:00:00"
 # Project summary to display on homepage.
-summary = ""
+summary: 
 
 # Tags: can be used for filtering projects.
 # Example: `tags = ["machine-learning", "deep-learning"]`
-tags = ["UGV",  "Robotics", "Autonomous Robot", "Computer Vision","Localization","ROS"]
+tags:
+- UGV
+- Robotics
+- Autonomous Robot 
+- Computer Vision
+- Localization
+- ROS
 
 # Optional external URL for project (replaces project detail page).
-external_link = ""
+external_link: 
 
 # Slides (optional).
 #   Associate this project with Markdown slides.
 #   Simply enter your slide deck's filename without extension.
-#   E.g. `slides = "example-slides"` references 
+#   E.g. `slides: example-slides"` references 
 #   `content/slides/example-slides.md`.
-#   Otherwise, set `slides = ""`.
-slides = ""
+#   Otherwise, set `slides: "`.
+slides: 
 
 # Links (optional).
-url_pdf = ""
-url_slides = ""
-url_video = ""
-url_code = ""
+url_pdf: 
+url_slides: 
+url_video: 
+url_code: 
 
 # Custom links (optional).
 #   Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
-# url_custom = [{icon_pack = "fab", icon="twitter", name="Follow", url = "https://twitter.com/georgecushen"}]
+# url_custom = [{icon_pack: fab", icon="twitter", name="Follow", url: https://twitter.com/georgecushen"}]
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your project's folder. 
-[image]
+image:
   # Caption (optional)
-  caption = ""
+  caption: 
   
   # Focal point (optional)
   # Options: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight
-  focal_point = "Smart"
-  preview_only = "true"
-+++
+  focal_point: Smart
+  preview_only: true
+toc: true
+---
 Along with 3 other teammates from the [State Key Laboratory of Robotics](http://english.sia.cas.cn/rh/rp/201408/t20140814_125856.html), 
 I participated in the Unmanned Ground Systems Challenge in October 2016 and worked specifically on the environment map 
 building and localization under GPS signal lost situation.

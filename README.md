@@ -234,6 +234,7 @@ Choose one frome themes/academic/data/themes/xxx.toml and set theme = "xxx" in c
     {{ end }}
   {{- end -}}
   ```
+  - add toc: true in each front matter.
 
   
 
