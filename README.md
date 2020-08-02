@@ -187,7 +187,7 @@ Remember whenever you wanted to edit something regarding layouts, you will need 
 
 1. add web counter
    - copy cooresponding file under themes/academic/layouts/partials, e.g. site_footer.html into the /root/layouts/partials folder.
-   - Find a web counter plugin on [freecounterweb](https://www.counter12.com/)
+   - Find a web counter plugin on [freecounterweb](https://www.counter12.com/) or this [fancy one](https://clustrmaps.com/add) with map.
    - copy the html code into file under your root folder.
    - Done!
 
