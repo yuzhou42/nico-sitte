@@ -181,6 +181,7 @@ Please check out details on the official website, here are only some changes we 
     # Customize the section spacing. Order is top, right, bottom, left.
     padding = [" 15px ", "0", " ", "0"] 
   </pre>
+7. In front matter, set `draft: true` to avoid publish certain unfinished or to hide content.
 
 ## functions
 Remember whenever you wanted to edit something regarding layouts, you will need to create setting file following the structure in the theme submodule under your root layouts. The function set in root will overwrite the one in the submodule.

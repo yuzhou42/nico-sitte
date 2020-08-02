@@ -7,7 +7,7 @@ authors:
 - Geng Qin
 - Wenqi Liu
 - nico # put this author name instead of your name directly will enable the function of showing your Info at the end of the publication page
-
+draft: true
 date: "2018-06-22T21:44:14+08:00"
 doi: ""
 
@@ -19,7 +19,7 @@ publishDate: "2018-06-22T21:44:14+08:00"
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Patent
 publication_types: ["1"]
-
+active: false
 # Publication name and optional abbreviated publication name.
 publication: In * International Conference on Control and Automation (ICCA)*, IEEE.
 publication_short: In *ICCA*
